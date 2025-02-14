@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -10,8 +10,8 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Jogo da Juju Codadora');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10. Anda logo, estou perdendo a paciência');
+    exibirTextoNaTela('h1', 'Joguinho da Juju Codadora');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100. Anda logo, estou perdendo a paciência');
 }
 
 exibirMensagemInicial();
@@ -29,7 +29,7 @@ function verificarChute() {
         if (chute > numeroSecreto) {
             exibirTextoNaTela('p', 'O número secreto é menor, otário');
         } else {
-            exibirTextoNaTela('p', 'Errou! O número secreto é maior, seu Berbigão');
+            exibirTextoNaTela('p', 'Errou! O número secreto é maior, seu tongo');
         }
         tentativas++;
         limparCampo();
